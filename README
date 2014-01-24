@@ -1,0 +1,4 @@
+# Test
+
+harbour -gh hrbext.prg hrbext2.prg
+go test
