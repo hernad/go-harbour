@@ -8,7 +8,10 @@
 #include "hbpcode.h"
 #include "hbset.h"
 #include "hb_io.h"
+#include "hbpgsql.h"
 #include "hbhrb.ch"
+
+
 
 typedef struct
 {
@@ -31,3 +34,16 @@ typedef struct
 
 extern void hb_hrbDo( PHRB_BODY pHrbBody, int iPCount, PHB_ITEM * pParams );
 extern PHRB_BODY hb_hrbLoadFromFile( const char * szHrb, HB_USHORT usMode );
+
+// postgres.c
+extern void HB_FUN_PQSETDBLOGIN();
+extern void HB_FUN_PQDB();
+extern void HB_FUN_PQUSER();
+extern void HB_FUN_PQPASS();
+extern void HB_FUN_PQHOST();
+
+
+//extern void HB_FUN_PQDB();
+extern void HB_FUN_PQRESET();
+extern void HB_FUN_PQSETDBLOGIN ();
+
