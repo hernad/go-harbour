@@ -26,8 +26,9 @@ import(
 )
 
 //export HbGo
-func HbGo() {
-    fmt.Println("Harbor function written in go")
+func HbGo(i int, cstr *C.char) {
+    fmt.Printf("i: %d str: %s\n", i, C.GoString(cstr))
+    fmt.Println("Harbor function written in go - pokrenuta iz HB_FUNC_GO_FUN (go.c)")
 }
 
 func HrbLoad(file string, mode int) {
