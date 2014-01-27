@@ -13,6 +13,22 @@
 
 #include "_cgo_export.h"
 
+HB_FUNC( GT_ROWS )
+{
+   int iRows, iCols;
+
+   hb_gtScrDim( &iRows, &iCols );
+   hb_retni( iRows );
+}
+
+HB_FUNC( GT_COLS )
+{
+   int iRows, iCols;
+
+   hb_gtScrDim( &iRows, &iCols );
+   hb_retni( iCols );
+}
+
 
 HB_FUNC( __RUN_SYSTEM )
 {

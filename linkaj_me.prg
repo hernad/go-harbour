@@ -1,3 +1,5 @@
+#include "hbclass.ch"
+
 ? "linkajme v6"
 
    Go_Fun()
@@ -51,11 +53,15 @@
 
    // hbct
    NumToken()
+   NumAt()
+   Random()
+   Blank()
    Token()
    AtToken()
    DirName()
    FileSeek()
    FileDate()
+   FileStr()
    FileDelete()
    GetSecret()
    FileAttr()
@@ -63,13 +69,57 @@
    StrFile()
    FileCopy()
    DirMake()
+   PrintReady()
+   Crypt()
 
    // go.c 
    FileBase()
    FileExt()
    __RUN_SYSTEM()
+   GT_ROWS()
+   GT_COLS()
 
 
    HB_SendMail()
 
    Hb_ZipOpen()
+   HB_ZIPSTOREFILE()
+   HB_ZipClose()
+   HB_UnzipOpen()
+   HB_UnzipClose()
+   HB_UnzipFileFirst()
+   HB_UnzipFileNext()
+   HB_UnzipFileInfo()
+   HB_UNZIPEXTRACTCURRENTFILE()
+
+
+   //GT
+
+   HB_GT_XWC_DEFAULT()
+   HB_GT_XWC()
+
+   
+
+function Fakt_Params()
+return undefined()
+
+function PRINT_IMP_EXP_REPORT()
+return undefined()
+
+function Add_to_details()
+return undefined()
+
+//function TDBFin()
+//return undefined()
+
+//CLASS TDbFin
+//ENDCLASS
+
+
+
+
+function undefined()
+Alert("nedefinisana funkcija !!!!" + PROCNAME(1))
+inkey(0)
+QUIT
+

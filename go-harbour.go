@@ -61,10 +61,7 @@ func HrbLoad(file string, mode int) {
    fmt.Printf("Uzimam iz harbour memvar B(2): %s\n", C.GoString(C.hb_itemGetC(pItem))) 
 */
 
-   //LoadDo("pg_test.hrb") 
 
-   //fmt.Println("ucitavam tpostgre harbour klasu")   
-   //LoadDo("tpostgre.hrb")
 
    //fmt.Println("test pgtest")
    //LoadDo("hbgo.hrb") 
@@ -72,16 +69,19 @@ func HrbLoad(file string, mode int) {
    fmt.Println("ucitavam tpostgre harbour klasu")   
    LoadDoHrb("tpostgre.hrb")
 
+   //LoadDoHrb("pg_object_test.hrb") 
 
 
 //   LoadZip("common")
 //   LoadHrb("common/" + "f18_ini_utils.hrb")
 //   LoadHrb("common/" + "f18_init_login.hrb")
 //   LoadHrb("common/" + "f18_init_semaphores.hrb")
-     LoadDoHrb("common.hrb")
+    LoadDoHrb("common.hrb")
+    LoadDoHrb("fin.hrb")
+    LoadDoHrb("run_main.hrb")
 
 
-   LoadZip("fin")
+   //LoadZip("fin")
 
    //C.hb_conOutStd( C.CString("Ernad Husremovic\n"), C.HB_SIZE(20) ) 
    fmt.Println("kraj")
