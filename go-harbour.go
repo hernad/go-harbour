@@ -2,7 +2,7 @@ package harbour
 
 /*
   #cgo CFLAGS: -I/usr/local/include/harbour -I/usr/include/postgresql
-  #cgo LDFLAGS: -L/usr/local/lib/harbour -lpq -lhbct -lhbpgsql  -lharbour
+  #cgo LDFLAGS: -L/usr/local/lib/harbour -lpq -lhbmzip -lz -lminizip -lhbct -lhbtip -lhbpgsql  -lharbour
   #include <hbvmint.h>
   #include <hbapi.h>
   #include <hbstack.h>
@@ -69,6 +69,10 @@ func HrbLoad(file string, mode int) {
    //fmt.Println("test pgtest")
    //LoadDo("hbgo.hrb") 
    
+   fmt.Println("ucitavam tpostgre harbour klasu")   
+   LoadDoHrb("tpostgre.hrb")
+
+
 
 //   LoadZip("common")
 //   LoadHrb("common/" + "f18_ini_utils.hrb")

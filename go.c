@@ -41,6 +41,40 @@ HB_FUNC( __RUN_SYSTEM )
 }
 
 
+#include "hbapi.h"
+#include "hbapifs.h"
+
+HB_FUNC( FILEBASE )
+{
+   const char * szPath = hb_parc( 1 );
+   if( szPath )
+   {
+      PHB_FNAME pFileName = hb_fsFNameSplit( szPath );
+      hb_retc( pFileName->szName );
+      hb_xfree( pFileName );
+   }
+   else
+      hb_retc_null();
+}
+
+/* FileExt( <cFile> ) --> cFileExt
+*/
+HB_FUNC( FILEEXT )
+{
+   const char * szPath = hb_parc( 1 );
+   if( szPath )
+   {
+      PHB_FNAME pFileName = hb_fsFNameSplit( szPath );
+      if( pFileName->szExtension != NULL )
+         hb_retc( pFileName->szExtension + 1 ); /* Skip the dot */
+      else
+         hb_retc_null();
+      hb_xfree( pFileName );
+   }
+   else
+      hb_retc_null();
+}
+
 
 HB_FUNC( GO_FUN )
 {

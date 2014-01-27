@@ -52,9 +52,24 @@
    // hbct
    NumToken()
    Token()
+   AtToken()
    DirName()
    FileSeek()
    FileDate()
    FileDelete()
+   GetSecret()
+   FileAttr()
+   SetFAttr()
+   StrFile()
+   FileCopy()
+   DirMake()
 
+   // go.c 
+   FileBase()
+   FileExt()
    __RUN_SYSTEM()
+
+
+   HB_SendMail()
+
+   Hb_ZipOpen()
