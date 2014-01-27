@@ -49,5 +49,6 @@
    Lo_Export()
    Lo_Unlink()
 
+   // hbct
    NumToken()
-
+   Token()
