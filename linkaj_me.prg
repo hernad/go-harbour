@@ -52,3 +52,9 @@
    // hbct
    NumToken()
    Token()
+   DirName()
+   FileSeek()
+   FileDate()
+   FileDelete()
+
+   __RUN_SYSTEM()
