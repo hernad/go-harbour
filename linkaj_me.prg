@@ -48,3 +48,6 @@
    Lo_Import()
    Lo_Export()
    Lo_Unlink()
+
+   NumToken()
+
