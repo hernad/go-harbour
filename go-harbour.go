@@ -78,6 +78,8 @@ func HrbLoad(file string, mode int) {
 //   LoadHrb("common/" + "f18_init_semaphores.hrb")
     LoadDoHrb("common.hrb")
     LoadDoHrb("fin.hrb")
+    LoadDoHrb("kalk.hrb")
+    LoadDoHrb("fakt.hrb")
     LoadDoHrb("run_main.hrb")
 
 

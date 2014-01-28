@@ -71,6 +71,9 @@
    DirMake()
    PrintReady()
    Crypt()
+   BOM()
+   TEMPFILE()
+   SETLASTKEY()
 
    // go.c 
    FileBase()
@@ -116,7 +119,15 @@ return undefined()
 //ENDCLASS
 
 
+// kalk.hrb
+function Fakt_Novi_Broj_Dokumenta()
+return undefined()
 
+function Azur_Fakt()
+return undefined()
+
+function POS_ROBMAT()
+return undefined()
 
 function undefined()
 Alert("nedefinisana funkcija !!!!" + PROCNAME(1))
