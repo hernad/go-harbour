@@ -2,7 +2,7 @@ package main
 
 /*
   #cgo CFLAGS: -I/usr/local/include/harbour -I/usr/include/postgresql
-  #cgo LDFLAGS: -L/usr/local/lib/harbour -lpq -lhbmzip -lz -lminizip -lhbct -lhbtip -lhbpgsql  -lharbour
+  #cgo LDFLAGS: -L/usr/local/lib/harbour -lpq -lhbmzip -lz -lminizip -lhbct -lhbtip -lhbpgsql -lhbdebug -lharbour
   #include <hbvmint.h>
   #include <hbapi.h>
   #include <hbstack.h>

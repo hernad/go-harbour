@@ -101,7 +101,9 @@
    HB_GT_XWC_DEFAULT()
    HB_GT_XWC()
 
-   
+
+   //debug
+   __DBGENTRY()   
 
 function Fakt_Params()
 return undefined()
