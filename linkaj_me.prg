@@ -131,6 +131,6 @@ return undefined()
 
 function undefined()
 Alert("nedefinisana funkcija !!!!" + PROCNAME(1))
-inkey(0)
-QUIT
+return
+
 

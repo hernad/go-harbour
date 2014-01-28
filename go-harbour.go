@@ -1,4 +1,4 @@
-package harbour
+package main
 
 /*
   #cgo CFLAGS: -I/usr/local/include/harbour -I/usr/include/postgresql
@@ -35,7 +35,7 @@ func HbGo(i int, cstr *C.char) {
     fmt.Println("Harbor function written in go - pokrenuta iz HB_FUNC_GO_FUN (go.c)")
 }
 
-func HrbLoad(file string, mode int) {
+func main() {
 
    C.hb_vmSetDefaultGT(C.CString("xwc"));
    //C.hb_vmSetDefaultGT(C.CString("trm"));
@@ -80,6 +80,7 @@ func HrbLoad(file string, mode int) {
     LoadDoHrb("fin.hrb")
     LoadDoHrb("kalk.hrb")
     LoadDoHrb("fakt.hrb")
+    LoadDoHrb("pos.hrb")
     LoadDoHrb("run_main.hrb")
 
 

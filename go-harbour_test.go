@@ -1,4 +1,4 @@
-package harbour
+package main
 
 import (
    "testing"
@@ -7,7 +7,7 @@ import (
 )
 
 func Test1(t *testing.T) {
-   HrbLoad("file.hrb", 4)    
+//   HrbLoad("file.hrb", 4)    
 }
 
 type SifTest struct {
